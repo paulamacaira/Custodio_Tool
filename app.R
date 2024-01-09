@@ -66,8 +66,6 @@ PontosMapa<-function(apertar,long_parque, lat_parque, lonlat){
   return(p)
 }
 
-## teste github
-
 GerarSerieVel<-function(Melhor_latitute, Melhor_longitude, EscalaTempo, altura, data_inicio, data_fim, caminho_dadosMerra2){
   Endereco = paste0(caminho_dadosMerra2,Melhor_longitude,"_",Melhor_latitute,".feather")
   base_hora <- read_feather(Endereco)
